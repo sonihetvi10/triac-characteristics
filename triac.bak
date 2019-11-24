@@ -1,0 +1,189 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:triac-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Q_TRIAC_AAG D1
+U 1 1 59C91C43
+P 5250 3500
+F 0 "D1" H 5375 3525 50  0000 L CNN
+F 1 "Q_TRIAC_AAG" H 5375 3450 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" V 5325 3525 50  0001 C CNN
+F 3 "" V 5250 3500 50  0001 C CNN
+	1    5250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R r2
+U 1 1 59C91C84
+P 4250 3550
+F 0 "r2" V 4330 3550 50  0000 C CNN
+F 1 "1k" V 4250 3550 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM20mm" V 4180 3550 50  0001 C CNN
+F 3 "" H 4250 3550 50  0001 C CNN
+	1    4250 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L R r1
+U 1 1 59C91CA9
+P 6000 3200
+F 0 "r1" V 6080 3200 50  0000 C CNN
+F 1 "1k" V 6000 3200 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Ceramic_Horizontal_L50mm-W14mm-H13mm-p60mm" V 5930 3200 50  0001 C CNN
+F 3 "" H 6000 3200 50  0001 C CNN
+	1    6000 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x02 ig1
+U 1 1 59C9206C
+P 3550 3850
+F 0 "ig1" H 3550 3950 50  0000 C CNN
+F 1 "Conn_01x02" H 3550 3650 50  0000 C CNN
+F 2 "Sockets_WAGO734:WAGO_734_2pin_Straight_RuggedPads" H 3550 3850 50  0001 C CNN
+F 3 "" H 3550 3850 50  0001 C CNN
+	1    3550 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x02 J1
+U 1 1 59C920CB
+P 3500 4350
+F 0 "J1" H 3500 4450 50  0000 C CNN
+F 1 "Conn_01x02" H 3500 4150 50  0000 C CNN
+F 2 "Connect:1pin" H 3500 4350 50  0001 C CNN
+F 3 "" H 3500 4350 50  0001 C CNN
+	1    3500 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x02 J2
+U 1 1 59C920F6
+P 5500 3000
+F 0 "J2" H 5500 3100 50  0000 C CNN
+F 1 "Conn_01x02" H 5500 2800 50  0000 C CNN
+F 2 "Sockets_WAGO734:WAGO_734_2pin_Straight_RuggedPads" H 5500 3000 50  0001 C CNN
+F 3 "" H 5500 3000 50  0001 C CNN
+	1    5500 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02 J3
+U 1 1 59C9215A
+P 6400 4100
+F 0 "J3" H 6400 4200 50  0000 C CNN
+F 1 "Conn_01x02" H 6400 3900 50  0000 C CNN
+F 2 "Sockets_WAGO734:WAGO_734_2pin_Straight_RuggedPads" H 6400 4100 50  0001 C CNN
+F 3 "" H 6400 4100 50  0001 C CNN
+	1    6400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3550 3750 3550
+Wire Wire Line
+	3750 3550 3750 3750
+Wire Wire Line
+	3750 3850 3750 4250
+Wire Wire Line
+	3750 4250 3700 4250
+Wire Wire Line
+	4400 3550 5100 3550
+Wire Wire Line
+	5100 3550 5100 3600
+Wire Wire Line
+	5250 3350 5250 3200
+Wire Wire Line
+	5250 3200 5500 3200
+Wire Wire Line
+	5600 3200 5850 3200
+Wire Wire Line
+	6150 3200 6150 4100
+Wire Wire Line
+	6150 4100 6200 4100
+Wire Wire Line
+	3700 4350 3950 4350
+Text Label 3950 4350 0    60   ~ 0
+gnd
+Wire Wire Line
+	6200 4200 6200 4250
+Wire Wire Line
+	6200 4250 6050 4250
+Text Label 6050 4250 0    60   ~ 0
+gnd
+Wire Wire Line
+	5250 3650 5250 3800
+Text Label 5250 3800 0    60   ~ 0
+gnd
+$Comp
+L Conn_01x02 J4
+U 1 1 59C94880
+P 7300 3100
+F 0 "J4" H 7300 3200 50  0000 C CNN
+F 1 "Conn_01x02" H 7300 2900 50  0000 C CNN
+F 2 "Sockets_WAGO734:WAGO_734_2pin_Straight_RuggedPads" H 7300 3100 50  0001 C CNN
+F 3 "" H 7300 3100 50  0001 C CNN
+	1    7300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3100 6900 3100
+Wire Wire Line
+	6900 3100 6900 3000
+Wire Wire Line
+	7100 3200 6900 3200
+Wire Wire Line
+	6900 3200 6900 3300
+Text Label 6900 3300 0    60   ~ 0
+gnd
+Text Label 6900 3000 0    60   ~ 0
+v1
+Wire Wire Line
+	5250 3300 5350 3300
+Connection ~ 5250 3300
+Text Label 5350 3300 0    60   ~ 0
+v1
+$EndSCHEMATC
